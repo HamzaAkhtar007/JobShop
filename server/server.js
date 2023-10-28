@@ -28,7 +28,10 @@ dotenv.config();
 connectDB();
 //rest object
 const app = express()
-
+app.get("/",(req,res)=>
+    {
+    res.json("Hello");
+})
 
 
 
@@ -56,10 +59,7 @@ app.use("/api/v1/job", jobsRoutes);
 //Error Middleware
 
 app.use(errorMiddleware)
-app.get("/",(req,res)=>
-    {
-    res.json("Hello");
-})
+
 const PORT = process.env.PORT
 //listen
 app.listen(PORT)
