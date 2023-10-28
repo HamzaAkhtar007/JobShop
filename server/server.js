@@ -37,7 +37,7 @@ app.use(ExpressMongoSanitize());
 app.use(xss());
 app.use(json());
 app.use(cors({
-    origin:"https://vercel.com/hamzaakhtar007s-projects/job-shop",
+    origin:"",
     methods:["POST","GET","PATCH","DELETE","PUT"],
     credentials:true,
 }));
