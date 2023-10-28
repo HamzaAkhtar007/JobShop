@@ -29,7 +29,7 @@ const Homepage = () => {
     const [pagecount, setpagecount] = useState(1);
     const load = async function () {
 
-        const res = await axios.post(`http://localhost:5000/api/v1/job/search-job?page=${currentPage}&limit=${itemsPerPage}`)
+        const res = await axios.post(`https://job-shop-hamzaakhtar007s-projects.vercel.app/api/v1/job/search-job?page=${currentPage}&limit=${itemsPerPage}`)
         console.log(res.data.results);
         setjob(res.data.results.job);
         setpagecount(res.data.results.pagecount)
