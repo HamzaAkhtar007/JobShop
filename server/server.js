@@ -38,7 +38,7 @@ app.use(xss());
 app.use(json());
 
 app.use(cors({
-  origin: "https://job-shop-client.vercel.app/",
+  origin: "https://job-shop-client.vercel.app",
   methods: 'GET,POST,PUT,DELETE,OPTIONS',
   allowedHeaders: 'Content-Type',
   credentials: true, // If your client includes credentials (e.g., cookies)
