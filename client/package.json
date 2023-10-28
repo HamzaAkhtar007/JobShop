@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "proxy":"https://job-shop-hamzaakhtar007s-projects.vercel.app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
