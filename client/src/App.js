@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Homepage from './pages/Home.js';
 import Login from './pages/Login.js';
 import Register from './pages/Register.js';
-
+import axios from "axios"
 import Notfound from './pages/Notfound.js';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,7 +20,7 @@ import BrowserJobs from './pages/BrowserJobs';
 import Searchpage from './pages/Searchpage';
 function App() {
   let { user } = useSelector((state) => state.presistedReducer.auth);
-
+axios.defaults.withCredentials=true;
 
   if (user === null) {
     return (
