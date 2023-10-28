@@ -60,6 +60,6 @@ app.use("/api/v1/job", jobsRoutes);
 
 app.use(errorMiddleware)
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT ||5000
 //listen
 app.listen(PORT)
