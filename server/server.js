@@ -44,8 +44,9 @@ app.use(cors({
 app.use(morgan("dev"));
 app.use(express.static('/public'))
 //routes
-app.get("/",(req,res)=>{
-    res.json("Hello");
+app.get("/",(req,res)=>
+    {
+    res.send("Hello");
 })
 app.use('/api/v1/test', testRoutes);
 app.use("/api/v1/auth", authRoutes);
