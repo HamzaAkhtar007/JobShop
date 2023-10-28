@@ -49,7 +49,7 @@ app.use(express.static('/public'))
 //routes
 app.get("/",(req,res)=>
     {
-    res.send("Hello");
+    res.json("Hello");
 })
 app.use('/api/v1/test', testRoutes);
 app.use("/api/v1/auth", authRoutes);
