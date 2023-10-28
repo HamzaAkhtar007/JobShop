@@ -37,7 +37,7 @@ app.use(ExpressMongoSanitize());
 app.use(xss());
 app.use(json());
 app.use(cors({
-    origin:"https://job-shop-client.vercel.app/",
+    origin:"https://job-shop-client.vercel.app",
     methods:["POST","GET","PATCH","DELETE","PUT"],
     credentials:true,
 }));
