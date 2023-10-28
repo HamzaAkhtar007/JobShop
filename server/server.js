@@ -36,7 +36,14 @@ app.use(helmet());
 app.use(ExpressMongoSanitize());
 app.use(xss());
 app.use(json());
-app.use(cors());
+
+app.use(cors({
+  origin: "https://job-shop-client.vercel.app/",
+  methods: 'GET,POST,PUT,DELETE,OPTIONS',
+  allowedHeaders: 'Content-Type',
+  credentials: true, // If your client includes credentials (e.g., cookies)
+}
+            ));
 app.use(morgan("dev"));
 app.use(express.static('/public'))
 //routes
