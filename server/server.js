@@ -28,7 +28,7 @@ dotenv.config();
 connectDB();
 //rest object
 const app = express()
-app.get("/",(req,res)=>
+app.get("/OK",(req,res)=>
     {
     res.json("Hello");
 })
