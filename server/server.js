@@ -28,11 +28,6 @@ dotenv.config();
 connectDB();
 //rest object
 const app = express()
-app.get("/OK",(req,res)=>
-    {
-    res.json("Hello");
-})
-
 
 
 app.use(helmet());
