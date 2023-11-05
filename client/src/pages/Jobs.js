@@ -14,7 +14,7 @@ const Jobs = () => {
     const GETALLUSER = async () => {
 
         if (user.userType === 'Admin') {
-            let res = await axios.post("http://localhost:5000/api/v1/job/alljobs", {
+            let res = await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/job/alljobs", {
                 token: localStorage.getItem('token')
             }, {
                 headers: {
@@ -28,7 +28,7 @@ const Jobs = () => {
             });
         }
         else {
-            let res = await axios.post("http://localhost:5000/api/v1/job/get-jobs", {
+            let res = await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/job/get-jobs", {
                 token: localStorage.getItem('token'),
                 userId: user._id,
             }, {
