@@ -15,7 +15,7 @@ const Users = () => {
     const GETALLUSER = async () => {
 
 
-        let res = await axios.post("http://localhost:5000/api/v1/user/alluser", {
+        let res = await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/user/alluser", {
             token: localStorage.getItem('token')
         }, {
             headers: {
