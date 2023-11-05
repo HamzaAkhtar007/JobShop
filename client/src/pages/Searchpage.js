@@ -25,7 +25,7 @@ const Searchpage = () => {
     const load = async function () {
 
 
-        const res = await axios.post(`http://localhost:5000/api/v1/job/search-job?page=${currentPage}&limit=${itemsPerPage}&jobTitle=${jobTitle}&City=${City}&Category=${Category}&jobType=${jobType}`)
+        const res = await axios.post(`https://drab-teal-lobster-kilt.cyclic.app/api/v1/job/search-job?page=${currentPage}&limit=${itemsPerPage}&jobTitle=${jobTitle}&City=${City}&Category=${Category}&jobType=${jobType}`)
         setjob(res.data.results.job);
         setpagecount(res.data.results.pagecount)
 
