@@ -60,7 +60,7 @@ const Login = () => {
             }).catch(function (error) {
 
                 console.log(error.response);
-                toast.warning(error.response.data.message)
+                toast.warning(error.response.message)
                 dispatch(hideLoading());
             });
 
