@@ -29,11 +29,11 @@ const Homepage = () => {
     const [pagecount, setpagecount] = useState(1);
     const load = async function () {
 
-        const res = await axios.post(`https://job-shop.vercel.app/api/v1/job/search-job?page=${currentPage}&limit=${itemsPerPage}`)
+        const res = await axios.post(`https://drab-teal-lobster-kilt.cyclic.app/api/v1/job/search-job?page=${currentPage}&limit=${itemsPerPage}`)
         console.log(res.data.results);
         setjob(res.data.results.job);
         setpagecount(res.data.results.pagecount)
-        const result = await axios.post(`http://localhost:5000/api/v1/company/allcompanies2`);
+        const result = await axios.post(`https://drab-teal-lobster-kilt.cyclic.app/api/v1/company/allcompanies2`);
         console.log(result)
 
         setimg1(require("../../../server/public/companylogos/" + result.data.data[0].logo))
