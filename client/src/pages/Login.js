@@ -42,7 +42,7 @@ const Login = () => {
         if (isValid) {
 
             dispatch(showLoading());
-            await axios.post("https://dull-red-gharial-cuff.cyclic.app/api/v1/auth/login", {
+            await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/auth/Login", {
                 email,
                 Password
 
