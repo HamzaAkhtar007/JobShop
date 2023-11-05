@@ -15,7 +15,7 @@ const Companies = () => {
     const GETALLUSER = async () => {
 
         if (user.userType === 'Admin') {
-            await axios.post("http://localhost:5000/api/v1/company/allcompanies", {
+            await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/company/allcompanies", {
                 token: localStorage.getItem('token')
             }, {
                 headers: {
@@ -33,7 +33,7 @@ const Companies = () => {
             });
         }
         else {
-            await axios.post("http://localhost:5000/api/v1/company/get-comapnies", {
+            await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/company/get-comapnies", {
                 token: localStorage.getItem('token'),
                 userid: user._id,
             }, {
