@@ -15,7 +15,7 @@ const BrowserJobs = () => {
     let [paragraphsWithBreaks, setparagraphsWithBreaks] = useState("");
     const data = async () => {
 
-        const res = await axios.post("http://localhost:5000/api/v1/job/findonejob", {
+        const res = await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/job/findonejob", {
             _id: id
 
         })
