@@ -22,7 +22,7 @@ const BrowserJobs = () => {
         console.log(res);
         setjob(res.data.job[0]);
         console.log(res.data.job[0].createdby)
-        const result = await axios.post("http://localhost:5000/api/v1/company/get-comapny", {
+        const result = await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/company/get-comapny", {
             createdby: res.data.job[0].createdby,
         })
 
