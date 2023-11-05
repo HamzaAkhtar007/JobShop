@@ -33,7 +33,7 @@ const Homepage = () => {
         console.log(res.data.results);
         setjob(res.data.results.job);
         setpagecount(res.data.results.pagecount)
-        const result = await axios.post(`https://drab-teal-lobster-kilt.cyclic.app/api/v1/company/allcompanies2`);
+        const result = await axios.post(`https://drab-teal-lobster-kilt.cyclic.app//api/v1/company/allcompanies2`);
         console.log(result)
 
         setimg1(require("../../../server/public/companylogos/" + result.data.data[0].logo))
