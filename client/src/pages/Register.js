@@ -71,7 +71,7 @@ const Register = () => {
 
             dispatch(showLoading());
 
-            await axios.post("http://localhost:5000/api/v1/auth/register", {
+            await axios.post("https://drab-teal-lobster-kilt.cyclic.app/api/v1/auth/register", {
                 userType: userType,
                 name: name,
                 email: email,
